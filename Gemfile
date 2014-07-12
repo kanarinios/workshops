@@ -20,6 +20,7 @@ gem 'therubyracer', platforms: :ruby
 
 group :development do
   gem 'spring'
+  gem "spring-commands-rspec"
 end
 
 group :development, :test do
@@ -27,6 +28,8 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'pry'
+  gem 'byebug'
+  
 end
 
 group :test do
