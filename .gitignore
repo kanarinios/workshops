@@ -11,3 +11,4 @@ config/database.yml
 .powenv
 .rvmrc
 .ruby-gemset
+/nbproject/private/
