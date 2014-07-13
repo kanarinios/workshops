@@ -1,9 +1,13 @@
 class Product < ActiveRecord::Base
+  #attr_accessor(:title, :description, :price)
+  
+  validates :title, presence: true
+  validates  :description, presence: true
+  validates :price, presence: true, format: { with: /\A\d+(?:\.\d{0,2})?\z/ }
   belongs_to :category
   belongs_to :user
   has_many :reviews
-  validates :title, :description, :price, presence: true
-  validates :price, format: { with: /\A\d+(?:\.\d{0,2})?\z/ }
+  
   
   def average_rating
     reviews = self.reviews
