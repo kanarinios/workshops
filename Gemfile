@@ -7,7 +7,7 @@ gem 'draper'
 gem 'decent_exposure'
 gem 'decent_decoration'
 gem 'devise'
-gem 'simple_form'
+gem 'simple_form', '~> 3.1.0.rc2'
 gem 'bootstrap-sass', '~> 3.1.1'
 
 gem 'haml-rails'

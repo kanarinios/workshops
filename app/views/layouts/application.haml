@@ -9,10 +9,6 @@
     = javascript_include_tag 'application'
 
   %body
-    .navbar.navbar-inverse{:role => "navigation"}
-      .container-fluid
-        .collapse.navbar-collapse
-          %button.btn.btn-default.navbar-btn{:type => "button", :style => "right"} Sign in
-            
-       
-    = yield 
+    = render 'layouts/navigation'        
+    .container
+      = yield 
